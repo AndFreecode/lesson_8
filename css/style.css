@@ -1,0 +1,429 @@
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+   font-style: normal;
+   font-weight: 900;
+   font-display: swap;
+}
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+}
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+}
+body {
+   font-family: "Lato";
+   font-weight: 400;
+   line-height: 160%;
+   color: #424551;
+}
+[class*="__conteiner"] {
+   max-width: 1230px;
+   margin: 50px auto 0;
+}
+h2 {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   color: #1e212c;
+}
+h2:first-child {
+   margin-bottom: 40px;
+}
+
+.site__first-part p {
+   margin-bottom: 48px;
+}
+h3 {
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 150%;
+   color: #1e212c;
+   margin-bottom: 24px;
+}
+ul li:not(:last-child) {
+   margin-bottom: 4px;
+}
+ul {
+   margin-bottom: 50px;
+}
+.site__first-part ul li {
+   padding-left: 32px;
+}
+.site__first-part ul li::before {
+   background: url("../img/Vector.png") 0 0 no-repeat;
+   content: "";
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   margin-right: 8px;
+}
+.site__first-part ul li:hover:before {
+   transition: all 1s ease 0s;
+   transform: rotate(360deg);
+}
+
+.site__second-part p:first-child {
+   font-size: 20px;
+   line-height: 150%;
+   color: #787a80;
+   margin-bottom: 8px;
+}
+.site__second-part h2 {
+   margin-bottom: 16px;
+}
+p.senior {
+   font-size: 20px;
+   line-height: 150%;
+   color: #787a80;
+   margin-bottom: 32px;
+}
+ul.rang {
+   font-weight: 700;
+   align-items: center;
+}
+
+ul.rang li:first-child:before {
+   content: "";
+   background: url("../img/Star.png") 0 0 no-repeat;
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   margin-right: 8px;
+}
+.courses::before {
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   margin-right: 8px;
+   content: "";
+   background: url("../img/play.png") 0 0 no-repeat;
+}
+li.students::before {
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   margin-right: 8px;
+   content: "";
+   background: url("../img/students.png") 0 0 no-repeat;
+}
+li.students:hover:before {
+   transition: all 0.3s ease 0s;
+   transform: scale(1.5);
+}
+li.courses:hover:before {
+   transition: all 0.3s ease 0s;
+   transform: scale(1.5);
+}
+li.rate:hover::before {
+   transition: all 0.3s ease 0s;
+   transform: rotate(-360deg);
+}
+.site__second-part p:last-of-type {
+   margin-bottom: 47px;
+}
+.test__list {
+   padding: 15px;
+   margin-bottom: 100px;
+   background: rgba(214, 241, 4, 0.26);
+}
+.test__list ul {
+   margin: 20px;
+}
+.test__list ul ul {
+   display: none;
+}
+.test__list-2 {
+   display: none;
+}
+.test__list ul {
+   color: blue;
+   font-size: 25px;
+}
+.test__list-1 li:hover .test__list-2,
+.test__list-2 li:hover .test__list-3 {
+   display: block;
+   color: red;
+}
+.test__list ul ul {
+   background: rgba(163, 90, 90, 0.434);
+   padding: 10px;
+}
+.test__list ul ul:not(:last-child) {
+   margin-bottom: 5px;
+}
+.test__block {
+   background: rgb(11, 3, 67);
+   width: 800px;
+   height: 300px;
+   overflow: auto;
+   margin: 0 auto 50px;
+}
+.test__link {
+   padding: 15px;
+}
+.test__link a {
+   display: inline-block;
+   border: 2px solid rgb(111, 7, 7);
+   border-radius: 25%;
+   width: 100px;
+   height: 50px;
+   text-align: center;
+   padding-top: 10px;
+   margin-left: 43px;
+}
+.test__link a {
+   background-color: rgb(137, 62, 62);
+   color: azure;
+   font-size: 25px;
+   font-weight: 900;
+}
+.test__link a:hover {
+   color: rgb(9, 145, 25);
+   text-shadow: 3px 3px 5px rgb(255, 179, 0);
+   transition: all 0.3s ease 0s;
+   transform: scale(1.1);
+}
+
+.test__link a::before {
+   content: "<";
+   display: inline-block;
+   color: red;
+}
+.test__link a::after {
+   content: ">";
+   display: inline-block;
+   color: blue;
+}
+.test__link a:hover::after {
+   transition: all 0.3s ease 0s;
+   transform: rotate(360deg);
+}
+.test__link a:hover::before {
+   transition: all 0.3s ease 0s;
+   transform: rotate(-360deg);
+}
+.test__link a:active {
+   background-color: #3657ce;
+}
+.test__text {
+   padding: 20px;
+   margin: 0 auto 0;
+   max-width: 750px;
+}
+.test__paragraf {
+   padding: 10px;
+   border: #1e212c 2px solid;
+   background-color: #3657ce;
+   color: red;
+}
+
+p.test__paragraf {
+   display: none;
+}
+p.test__paragraf:target {
+   display: block;
+}
+
+.test__text p:nth-child(even) {
+   background-color: aqua;
+   color: #392301;
+}
+.test__conteiner {
+   margin-bottom: 150px;
+}
+
+.game__button {
+   display: inline-block;
+   width: 250px;
+   height: 75px;
+   border: #1e212c 1px solid;
+   border-radius: 15%;
+   background-color: #f1145e;
+   font-size: 20px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #e78a3d;
+   box-shadow: #1e212c -10px -15px 10px;
+   margin-left: 490px;
+   margin-bottom: 100px;
+   text-align: center;
+   padding: 25px;
+}
+.game__button:hover {
+   box-shadow: inset black 2px 2px 2px 2px, black 2px -2px 2px 2px;
+   background-color: rgb(90, 17, 227);
+   color: #1e212c;
+}
+.game__conteiner {
+   font-size: 0px;
+}
+.game__body * {
+   cursor: pointer;
+   position: relative;
+   display: inline-block;
+}
+
+.game {
+   width: 1150px;
+   height: 800px;
+   border: #021350 1px solid;
+   margin: 0 auto;
+   background: url("../img/3.jpg") 50% / cover;
+   border-radius: 5px;
+   box-shadow: -15px 18px 15px 2px #02135077, 15px -15px 15px 2px #0213508b;
+   display: none;
+}
+.game:target {
+   display: block;
+}
+.game__start {
+   font-size: 16px;
+   width: 50px;
+   height: 50px;
+   background-color: red;
+   text-transform: uppercase;
+   margin-left: 50px;
+   bottom: 8px;
+}
+.game__start p {
+   padding-top: 29%;
+   color: aliceblue;
+   text-align: center;
+}
+.part-1 {
+   height: 30px;
+   width: 300px;
+   background-color: rgb(9, 60, 160);
+}
+.part-2 {
+   height: 150px;
+   width: 25px;
+   background-color: rgb(160, 42, 9);
+   top: 120px;
+}
+.part-3 {
+   height: 20px;
+   width: 350px;
+   background-color: rgb(9, 60, 160);
+   top: 120px;
+}
+.part-4 {
+   height: 150px;
+   width: 18px;
+   background-color: rgb(9, 160, 160);
+   top: 120px;
+}
+.part-5 {
+   height: 15px;
+   width: 180px;
+   background-color: rgb(160, 72, 9);
+   bottom: 15px;
+}
+.part-6 {
+   height: 150px;
+   width: 14px;
+   background-color: rgb(9, 60, 160);
+   top: 120px;
+}
+.part-7 {
+   height: 150px;
+   width: 13px;
+   background-color: rgb(164, 177, 98);
+   top: 270px;
+   right: 14px;
+}
+.part-8 {
+   height: 150px;
+   width: 12px;
+   background-color: rgb(160, 9, 120);
+   top: 420px;
+   right: 28px;
+}
+.part-9 {
+   height: 10px;
+   width: 400px;
+   background-color: rgb(9, 60, 160);
+   top: 230px;
+   left: 584px;
+}
+.part-10 {
+   height: 180px;
+   width: 10px;
+   background-color: rgb(145, 160, 9);
+   left: 176px;
+   top: 400px;
+}
+.part-11 {
+   height: 10px;
+   width: 398px;
+   background-color: rgb(9, 160, 77);
+   top: 400px;
+   right: 232px;
+}
+.game__finish {
+   font-size: 24px;
+   font-weight: 900;
+   height: 75px;
+   width: 175px;
+   background-color: rgb(6, 185, 18);
+   right: 800px;
+   top: 390px;
+   text-align: center;
+}
+.game__finish p {
+   padding-top: 13px;
+   top: 10px;
+   text-transform: uppercase;
+}
+.game__finish:hover p {
+   transition: all 0.5s ease 0s;
+   transform: scale(1.2);
+   color: #f1145e;
+}
+
+[class^="part"] {
+   visibility: hidden;
+}
+/*.game__start:hover + .part-1,
+[class*="part"]:hover,
+[class*="part"]:hover + * {
+   visibility: visible;
+}*/
+.game__finish {
+   visibility: hidden;
+}
+.game__start:hover + .part-1,
+.part-1:hover,
+.part-1:hover + .part-2,
+.part-2:hover,
+.part-2:hover + .part-3,
+.part-3:hover,
+.part-3:hover + .part-4,
+.part-4:hover,
+.part-4:hover + .part-5,
+.part-5:hover,
+.part-5:hover + .part-6,
+.part-6:hover,
+.part-6:hover + .part-7,
+.part-7:hover,
+.part-7:hover + .part-8,
+.part-8:hover,
+.part-8:hover + .part-9,
+.part-9:hover,
+.part-9:hover + .part-10,
+.part-10:hover,
+.part-10:hover + .part-11,
+.part-11:hover,
+.part-11:hover + .game__finish,
+.game__finish:hover {
+   visibility: visible;
+}
